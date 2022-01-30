@@ -4,22 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='stylesheet' href='./styles.css'>
     <title>Bin2Dec</title>
   </head>
   <body>
     <header>
-      <h2>Binary to decimal converter</h2>
+      <h2>Conversor binário para decimal</h2>
     </header>
-    <div>
-      <input type="number" placeholder="Insira o valor em binário aqui">
+    <div class='div-converter'>
+      <input type="text" class='input-binary' placeholder="Insira o valor em binário aqui">
       <span>
         <h3>Resultado em decimal:</h3>
-        <input id='result'>
+        <input id='result' class='input-decimal' value='42' disabled>
       </span>
     </div>
-    <footer>
-      &reg; Pedro H G Bonel
-      <span><i class='github-logo'></i><a href="https://github.com/pentrU">pentrU</a></span>
-    </footer>
   </body>
+  <footer>
+    &reg; Pedro H G Bonel
+    <span class='github'><div class="icons8-github"></div><a href="https://github.com/pentrU">pentrU</a></span>
+  </footer>
 </html>
