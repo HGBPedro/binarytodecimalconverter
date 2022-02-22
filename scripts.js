@@ -12,10 +12,10 @@ function convertToDecimal (e) {
 }
 
 function maskToBinary (e) {
-  return e.key.replace(/\D/g, '')
+  return e.target.value = e.target.value.replace(/[^0-1]/g, '')
 }
 
 const input = document.querySelector('.input-binary')
 
-input.addEventListener('keyup', maskToBinary)
-input.addEventListener('change', convertToDecimal)
+input.addEventListener('input', maskToBinary)
+input.addEventListener('keyup', convertToDecimal)
